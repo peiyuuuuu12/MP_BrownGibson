@@ -1,3 +1,33 @@
-streamlit
-pandas
-numpy
+# Core dependencies
+numpy>=1.20.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+plotly>=5.3.0
+
+# Web application framework
+streamlit>=1.12.0
+
+# Data visualization
+plotly-express>=0.4.0
+seaborn>=0.11.0
+
+# Optional - for advanced functionality
+scikit-learn>=1.0.0  # For sensitivity analysis & additional statistical tools
+openpyxl>=3.0.0      # For Excel file support
+xlrd>=2.0.0          # For reading Excel files
+pyyaml>=6.0          # For configuration files
+jsonschema>=4.0.0    # For JSON validation
+
+# Development tools (comment out for production)
+# pytest>=6.0.0
+# black>=22.0.0
+# flake8>=4.0.0
+# mypy>=0.900
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Deployment dependencies
+gunicorn>=20.1.0     # For serving the application
+watchdog>=2.1.0      # Required for Streamlit file watching
