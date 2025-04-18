@@ -81,7 +81,7 @@ def main():
     with st.sidebar:
         st.header("How to use this tool")
         st.write("""
-        1. Enter the number of locations and factors
+        1. Enter the number of locations or suppliers and factors
         2. Fill in the objective costs for each location
         3. Rate subjective factors for each location (0-1)
         4. Set weights for subjective factors (must sum to 1)
@@ -100,8 +100,8 @@ def main():
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        st.header("1. Define Your Locations and Factors")
-        num_locations = st.number_input("Number of Locations:", min_value=2, max_value=10, value=3, step=1)
+        st.header("1. Define Your Locations or suppliers and Factors")
+        num_locations = st.number_input("Number of Locations or suppliers:", min_value=2, max_value=10, value=3, step=1)
         factors = st.text_input("Subjective Factors (comma separated):", value="proximity,labor quality,environment").split(',')
         factors = [f.strip() for f in factors]
         
